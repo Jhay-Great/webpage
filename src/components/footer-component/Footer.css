@@ -1,0 +1,26 @@
+footer {
+    min-height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-container > span {
+    width: 50px;
+}
+.contact-container > span img {
+    width: inherit;
+}
+
+footer p {
+    font-size: max(.5rem, 1vw);
+    margin: 0 0 1rem;
+}

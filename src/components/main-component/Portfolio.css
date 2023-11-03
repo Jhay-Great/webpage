@@ -1,0 +1,133 @@
+.portfolio {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 0;
+
+  display: flex;
+  flex-direction: column;
+}
+.portfolio > * {
+  margin: 0 0 2rem;
+}
+.portfolio > h2 {
+  font-size: min(max(13px, 10vw), 40px);
+  text-align: center;
+}
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem;
+}
+.project a {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project {
+  /* width: 400px; */
+  width: min(max(200px, 80vw), 400px);
+  border-radius: 20px;
+  box-shadow: 3px 3px 2px 1px var(--primary-color);
+  overflow: hidden;
+}
+.project:hover {
+  cursor: pointer;
+  /* box-shadow: 3px 3px 2px 1px darkblue; */
+  
+}
+.project:hover .project-link > p {
+  padding: 0 0 0.5rem;
+  cursor: pointer;
+  /* background-color: var(--primary-color); */
+  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  font-weight: 600;
+
+  transition: all 0.3s;
+}
+.project img {
+  width: inherit;
+  height: 300px;
+  object-fit: cover;
+  /* border-radius: inherit; */
+}
+.project a > p {
+  font-size: min(max(1rem, 4vw), 22px);
+  text-align: center;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+/* p.description {
+  text-align: center;
+  padding: 1rem;
+} */
+/* SEE MORE STYLES */
+.portfolio > .see-more {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  width: fit-content;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  padding: .5rem;
+  box-shadow: 2px 2px black;
+  
+  align-self: center;
+}
+.portfolio .see-more:hover {
+  font-weight: 700;
+  color: inherit;
+  padding: .6rem;
+  box-shadow: 3px 3px black;
+}
+
+/* LANGUAGE STYLES */
+.language {
+  min-height: 50vh;
+  width: inherit;
+
+  display: flex;
+  flex-direction: column;
+}
+.language > h2 {
+  text-align: center;
+}
+.language-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+  margin: auto 0;
+}
+.language-container > span {
+  /* width: 100px; */
+  height: 100px;
+
+  display: flex;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 380px) {
+  .project {
+    aspect-ratio: 1/1;
+  }
+  .project > p {
+    display: none;
+  }
+}
+@media screen and (max-width: 250px) {
+  .project > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
